@@ -1,0 +1,38 @@
+[CENÁRIO 01] - Campos obrigatórios vazios
+- Acessar a página de cadastro
+- Não preencher nenhum campo
+- Verificar que o botão "Cadastrar" está desabilitado
+
+[CENÁRIO 02] - Nome com menos de 3 caracteres
+- Digitar "Jo" no campo Nome
+- Verificar que é exibida uma mensagem de erro
+
+[CENÁRIO 03] - E-mail inválido
+- Digitar "email-invalido" no campo E-mail
+- Verificar mensagem de erro "E-mail inválido"
+
+[CENÁRIO 04] - E-mail duplicado
+- Usar um e-mail já cadastrado como "teste@exemplo.com"
+- Verificar mensagem de erro "E-mail já cadastrado"
+
+[CENÁRIO 05] - Senha inválida
+- Digitar "12345" no campo Senha
+- Verificar mensagem de erro "Senha deve ter no mínimo 6 caracteres"
+
+[CENÁRIO 06] - Cadastro válido
+- Nome: "João da Silva"
+- E-mail: "joao@email.com"
+- Senha: "123456"
+- Clicar em "Cadastrar"
+- Verificar envio via HTTPS
+- Verificar redirecionamento para a página de login
+- Verificar mensagem "Cadastro realizado com sucesso"
+
+[CENÁRIO 07] - Erro no servidor
+- Simular falha na API
+- Clicar em "Cadastrar"
+- Verificar exibição de mensagem de erro visual
+
+[CENÁRIO 08] - Verificação de responsividade
+- Acessar a página via desktop, tablet e mobile
+- Verificar se o formulário está centralizado e sem rolagem vertical
